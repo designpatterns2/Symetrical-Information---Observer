@@ -1,6 +1,6 @@
 package net.sf.bloodball.gameflow;
 
-public class InTurnOperation {
+public class InTurnOperation implements Operation {
   public final static InTurnOperation BLOCK_AFTER_MOVE = new InTurnOperation();
   public final static InTurnOperation MOVE = new InTurnOperation();
   public final static InTurnOperation HAND_OFF = new InTurnOperation();

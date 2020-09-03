@@ -20,7 +20,7 @@ public class SetupTeamState extends SetupState {
     } else {
       setMayEndTurn(false);
     }
-    setInTurnOperation(InTurnOperation.SET_UP_TEAM);
+    //setInTurnOperation(InTurnOperation.SET_UP_TEAM);
   }
 
   public void performEndTurnOperation() {

@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="lib">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/util.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/mockobjects-src.zip!/" />
+      <root url="jar://$PROJECT_DIR$/lib/mockobjects.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/junit_src.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/junit.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

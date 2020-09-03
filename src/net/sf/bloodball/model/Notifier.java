@@ -21,11 +21,11 @@ public class Notifier {
     }
   }
 
-  public static void fireInTurnOperationChangedEvent() {
+  /*public static void fireInTurnOperationChangedEvent() {
     if (modelListener != null) {
       modelListener.inTurnOperationChanged();
     }
-  }
+  }*/
 
   public static void fireSquareChangedEvent(Point position) {
     if (modelListener != null) {

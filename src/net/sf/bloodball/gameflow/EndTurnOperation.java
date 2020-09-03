@@ -1,6 +1,6 @@
 package net.sf.bloodball.gameflow;
 
-public class EndTurnOperation {
+public class EndTurnOperation implements Operation {
 	
 	public final static EndTurnOperation END_TURN = new EndTurnOperation();
 	public final static EndTurnOperation FINISH_BALL_SETUP = new EndTurnOperation();

@@ -1,7 +1,5 @@
 package net.sf.bloodball.model;
 
-import de.vestrial.util.error.Ensuring;
-import java.awt.Point;
 import net.sf.bloodball.model.player.*;
 
 public class Game {
@@ -39,7 +37,6 @@ public class Game {
 		getField().resetSquares();
 		getTeams().startNewRound(offensiveTeam);
 		Notifier.fireEndTurnOperationChangedEvent();
-		Notifier.fireInTurnOperationChangedEvent();
 	}
 
 	public void startNewTurn() {

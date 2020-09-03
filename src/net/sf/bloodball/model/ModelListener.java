@@ -12,5 +12,5 @@ public interface ModelListener extends EventListener {
 	void dugOutContentChanged(Team team, int playerNumber);
 	void squareContentChanged(Point position);
 	void endTurnOperationChanged();
-	void inTurnOperationChanged();
+	//void inTurnOperationChanged();
 }

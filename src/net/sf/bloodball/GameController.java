@@ -13,8 +13,8 @@ public class GameController implements ModelListener {
 
   private GameBoard gameBoard;
   private GameFlowController controller;
-  private MainFrame mainFrame;
   private OperationMessages localOperations;
+  public static MainFrame mainFrame;
 
   public GameController() {
     controller = new GameFlowController(new Game());
@@ -79,10 +79,10 @@ public class GameController implements ModelListener {
     mainFrame.setEndTurnButtonText(localOperations.getEndTurnTextFor(controller.getState().getEndTurnOperation()));
   }
 
-  public void inTurnOperationChanged() {
+  /*public void inTurnOperationChanged() {
     mainFrame.setStatusBarColor(getGame().getTeams().getActiveTeam().getColor());
     mainFrame.setStatusBarText(localOperations.getInTurnStatusTextFor(controller.getState().getInTurnOperation()));
-  }
+  }*/
 
   public void showFrame() {
     mainFrame.show();
