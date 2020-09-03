@@ -22,6 +22,7 @@ public class MainFrame extends JFrame {
   private StatusBar statusBar = new StatusBar();
   private ToolBar toolBar = new ToolBar();
   private JLabel scoreBoard = new JLabel("0 : 0 ");
+  private JLabel actionBar = new JLabel("Action bar");
 
   public void showMessageDialog(String message) {
     JOptionPane.showMessageDialog(this, message);
@@ -47,6 +48,16 @@ public class MainFrame extends JFrame {
     north.add(scoreBoard, BorderLayout.EAST);
     mainPanel.add(north, BorderLayout.NORTH);
     toolBar.addTool(endTurnButton);
+
+    //setting up information bar on the south of panel
+    JPanel informationBar = new JPanel(new BorderLayout());
+    informationBar.add(statusBar.getComponent(), BorderLayout.EAST);
+    informationBar.add(actionBar, BorderLayout.WEST);
+    mainPanel.add(informationBar, BorderLayout.SOUTH);
+  }
+
+  public void setActionBarText(String actionBarText) {
+    actionBar.setText(actionBarText);
   }
 
   public JPanel getGameBoardPanel() {
